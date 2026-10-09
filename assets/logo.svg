@@ -14,7 +14,7 @@
 
   <!-- Wordmark -->
   <text x="74" y="46" font-family="Oswald, Arial Narrow, sans-serif" font-weight="700"
-        font-size="32" letter-spacing="1" fill="#f1ece1">SKORPION</text>
+        font-size="32" letter-spacing="1" fill="#1a1a1a">SKORPION</text>
   <text x="76" y="72" font-family="Oswald, Arial Narrow, sans-serif" font-weight="500"
         font-size="19" letter-spacing="8" fill="#ff5a1f">CROSS</text>
 </svg>

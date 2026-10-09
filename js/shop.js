@@ -105,7 +105,6 @@ document.addEventListener("DOMContentLoaded", () => {
     grid.innerHTML = results.length
       ? results.map(productCardHTML).join("")
       : `<div class="empty-state">
-           <div class="big">🔍</div>
            <h3>No hay productos con estos filtros</h3>
            <p>Prueba a quitar alguno de los filtros activos.</p>
          </div>`;

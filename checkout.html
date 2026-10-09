@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Finalizar pedido — Skorpion Cross</title>
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=4">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <script>
   (function () {
     try {
@@ -26,26 +26,24 @@
   <div class="topbar">
     <div class="wrap">
       <div class="topbar-links">
-        <a href="tel:+34910000000">📞 910 00 00 00</a>
-        <a href="mailto:info@skorpioncross.es">✉️ info@skorpioncross.es</a>
-        <span>📍 C/ Azuela, 56 · Polígono P29 · Collado Villalba</span>
-      </div>
-      <div class="topbar-links">
-        <span>Lun–Vie 9:30–14:00 / 16:30–20:00 · Sáb 10:00–14:00</span>
+        <a href="tel:+34910000000">910 00 00 00</a>
+        <a href="mailto:info@skorpioncross.es">info@skorpioncross.es</a>
+        <span>C/ Azuela, 56 · Polígono P29 · Collado Villalba</span>
       </div>
     </div>
   </div>
 
   <nav class="navbar wrap">
-    <a href="index.html" class="brand"><img src="assets/logo.svg" alt="Skorpion Cross"></a>
+    <a href="index.html" class="brand"><img class="logo-for-light" src="assets/logo.svg?v=2" alt="Skorpion Cross"><img class="logo-for-dark" src="assets/logo-dark.svg?v=2" alt="" aria-hidden="true"></a>
     <ul class="nav-links">
       <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="index.html#taller">Taller</a></li>
       <li><a href="index.html#contacto">Contacto</a></li>
     </ul>
     <div class="nav-actions">
-      <a href="carrito.html" class="cart-link" aria-label="Ver carrito">🛒<span class="cart-badge" data-cart-count hidden>0</span></a>
-      <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">🌙</button>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+      <a href="carrito.html" class="cart-link" aria-label="Ver carrito">Carrito<span class="cart-badge" data-cart-count hidden>0</span></a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">Oscuro</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">Menú</button>
     </div>
   </nav>
 </header>
@@ -54,11 +52,12 @@
   <div class="mobile-nav-panel">
     <button class="mobile-nav-close" id="navClose">✕</button>
     <div class="mobile-theme-row">
-      <span>Modo claro / oscuro</span>
-      <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">🌙</button>
+      <span>Tema</span>
+      <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">Oscuro</button>
     </div>
     <a href="tienda.html">Tienda</a>
     <a href="carrito.html">Carrito <span data-cart-count hidden>0</span></a>
+    <a href="index.html#taller">Taller</a>
     <a href="index.html#contacto">Contacto</a>
   </div>
 </div>
@@ -77,9 +76,9 @@
   </div>
 </section>
 
-<script src="js/products.js"></script>
-<script src="js/cart.js"></script>
-<script src="js/checkout.js"></script>
-<script src="js/main.js"></script>
+<script src="js/products.js?v=2"></script>
+<script src="js/cart.js?v=2"></script>
+<script src="js/checkout.js?v=2"></script>
+<script src="js/main.js?v=2"></script>
 </body>
 </html>

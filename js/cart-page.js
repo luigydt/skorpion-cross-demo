@@ -9,7 +9,6 @@ function render() {
   if (!lines.length) {
     el.innerHTML = `
       <div class="cart-empty">
-        <div class="big">🛒</div>
         <h3>Tu carrito está vacío</h3>
         <p style="color:var(--text-dim); margin: 10px 0 26px;">Explora el catálogo y añade motos, equipación o recambios.</p>
         <a href="tienda.html" class="btn btn-primary">Ir a la tienda</a>
@@ -23,7 +22,7 @@ function render() {
     <tr data-line="${l.id}">
       <td>
         <div class="cart-item">
-          <div class="thumb">${l.product.icon}</div>
+          <div class="thumb">${l.product.img ? `<img src="${l.product.img}" alt="">` : l.product.brand.slice(0, 2)}</div>
           <div>
             <h4><a href="producto.html?id=${l.id}">${l.product.name}</a></h4>
             <span>${l.product.brand} · ${l.product.categoria}</span>

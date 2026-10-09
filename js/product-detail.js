@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!p) {
     detail.innerHTML = `
       <div class="empty-state">
-        <div class="big">🔧</div>
         <h3>Producto no encontrado</h3>
         <p>Puede que el enlace esté mal o que ya no esté disponible.</p>
         <br><a href="tienda.html" class="btn btn-primary">Volver a la tienda</a>
@@ -26,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   detail.innerHTML = `
     <div class="product-detail">
-      <div class="pd-gallery">${p.icon}</div>
+      <div class="pd-gallery">${p.img ? `<img src="${p.img}" alt="${p.name}">` : `<span class="ph">${p.brand}</span>`}</div>
       <div>
         <div class="pd-kind">${p.brand} · ${p.categoria}${p.condicion ? " · " + p.condicion : ""}</div>
         <h1 class="pd-title">${p.name}</h1>
@@ -34,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <span class="pd-price">${formatPrice(p.precio)}</span>
           ${p.precioAntes ? `<span class="pd-price-old">${formatPrice(p.precioAntes)}</span>` : ""}
         </div>
-        <div class="pd-stock ${agotado ? "out" : "in"}">${agotado ? "✕ Agotado" : `✓ Disponible (${p.stock} uds.)`}</div>
+        <div class="pd-stock ${agotado ? "out" : "in"}">${agotado ? "Agotado" : `Disponible · ${p.stock} uds.`}</div>
         <p class="pd-desc">${p.desc}</p>
         ${specsRows ? `<table class="pd-specs">${specsRows}</table>` : ""}
 
@@ -64,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   document.getElementById("addToCartBtn")?.addEventListener("click", (e) => {
     addToCart(p.id, qty);
-    e.target.textContent = "✓ Añadido al carrito";
+    e.target.textContent = "Añadido al carrito";
     setTimeout(() => (e.target.textContent = "Añadir al carrito"), 1200);
   });
 

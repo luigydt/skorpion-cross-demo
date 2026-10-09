@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!lines.length) {
     el.innerHTML = `
       <div class="cart-empty">
-        <div class="big">🛒</div>
         <h3>No tienes productos en el carrito</h3>
         <p style="color:var(--text-dim); margin: 10px 0 26px;">Añade algo desde la tienda antes de finalizar un pedido.</p>
         <a href="tienda.html" class="btn btn-primary">Ir a la tienda</a>
@@ -79,7 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const orderNum = "SK-" + Math.floor(100000 + Math.random() * 900000);
     document.querySelector(".checkout-layout").outerHTML = `
       <div class="checkout-success">
-        <div class="big">✅</div>
         <h2>¡Pedido recibido!</h2>
         <p>Tu número de pedido simulado es <span class="order-num">${orderNum}</span>.<br>
         Te contactaremos para confirmar disponibilidad y forma de entrega.<br>

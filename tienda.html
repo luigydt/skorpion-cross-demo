@@ -6,10 +6,10 @@
 <title>Tienda — Skorpion Cross</title>
 <meta name="description" content="Catálogo de motos, equipación y recambios de Skorpion Cross en Collado Villalba.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=4">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <script>
   (function () {
     try {
@@ -27,33 +27,26 @@
   <div class="topbar">
     <div class="wrap">
       <div class="topbar-links">
-        <a href="tel:+34910000000">📞 910 00 00 00</a>
-        <a href="mailto:info@skorpioncross.es">✉️ info@skorpioncross.es</a>
-        <span>📍 C/ Azuela, 56 · Polígono P29 · Collado Villalba</span>
-      </div>
-      <div class="topbar-links">
-        <span>Lun–Vie 9:30–14:00 / 16:30–20:00 · Sáb 10:00–14:00</span>
+        <a href="tel:+34910000000">910 00 00 00</a>
+        <a href="mailto:info@skorpioncross.es">info@skorpioncross.es</a>
+        <span>C/ Azuela, 56 · Polígono P29 · Collado Villalba</span>
       </div>
     </div>
   </div>
 
   <nav class="navbar wrap">
-    <a href="index.html" class="brand"><img src="assets/logo.svg" alt="Skorpion Cross"></a>
+    <a href="index.html" class="brand"><img class="logo-for-light" src="assets/logo.svg?v=2" alt="Skorpion Cross"><img class="logo-for-dark" src="assets/logo-dark.svg?v=2" alt="" aria-hidden="true"></a>
 
     <ul class="nav-links">
       <li><a href="tienda.html">Tienda</a></li>
-      <li><a href="index.html#servicios">Taller</a></li>
-      <li><a href="index.html#marcas">Marcas</a></li>
-      <li><a href="index.html#nosotros">Nosotros</a></li>
+      <li><a href="index.html#taller">Taller</a></li>
       <li><a href="index.html#contacto">Contacto</a></li>
     </ul>
 
     <div class="nav-actions">
-      <a href="index.html#contacto" class="btn btn-outline">Pedir cita taller</a>
-      <a href="tel:+34910000000" class="btn btn-primary">Llamar ahora</a>
-      <a href="carrito.html" class="cart-link" aria-label="Ver carrito">🛒<span class="cart-badge" data-cart-count hidden>0</span></a>
-      <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">🌙</button>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+      <a href="carrito.html" class="cart-link" aria-label="Ver carrito">Carrito<span class="cart-badge" data-cart-count hidden>0</span></a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">Oscuro</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">Menú</button>
     </div>
   </nav>
 </header>
@@ -63,16 +56,14 @@
   <div class="mobile-nav-panel">
     <button class="mobile-nav-close" id="navClose">✕</button>
     <div class="mobile-theme-row">
-      <span>Modo claro / oscuro</span>
-      <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">🌙</button>
+      <span>Tema</span>
+      <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">Oscuro</button>
     </div>
     <a href="tienda.html">Tienda</a>
     <a href="carrito.html">Carrito <span data-cart-count hidden>0</span></a>
-    <a href="index.html#servicios">Taller</a>
-    <a href="index.html#marcas">Marcas</a>
-    <a href="index.html#nosotros">Nosotros</a>
+    <a href="index.html#taller">Taller</a>
     <a href="index.html#contacto">Contacto</a>
-    <a href="tel:+34910000000" style="border:none; margin-top:10px;" class="btn btn-primary btn-block">Llamar ahora</a>
+    <a href="tel:+34910000000">Llamar · 910 00 00 00</a>
   </div>
 </div>
 
@@ -118,12 +109,12 @@
   </aside>
 </div>
 
-<a href="https://wa.me/34600000000" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<a href="https://wa.me/34600000000" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
 
-<script src="js/products.js"></script>
-<script src="js/cart.js"></script>
-<script src="js/product-card.js"></script>
-<script src="js/shop.js"></script>
-<script src="js/main.js"></script>
+<script src="js/products.js?v=2"></script>
+<script src="js/cart.js?v=2"></script>
+<script src="js/product-card.js?v=2"></script>
+<script src="js/shop.js?v=2"></script>
+<script src="js/main.js?v=2"></script>
 </body>
 </html>

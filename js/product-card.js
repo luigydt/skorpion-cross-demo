@@ -9,14 +9,14 @@ function productCardHTML(p) {
   return `
     <div class="product-card">
       <a href="producto.html?id=${p.id}" aria-label="${p.name}">
-        <div class="product-thumb">${agotado ? '<span class="badge-tag agotado">Agotado</span>' : badge}${p.icon}</div>
+        <div class="product-thumb">${agotado ? '<span class="badge-tag agotado">Agotado</span>' : badge}${p.img ? `<img src="${p.img}" alt="${p.name}">` : `<span class="ph">${p.brand}</span>`}</div>
       </a>
       <div class="product-body">
         <div class="pkind">${p.brand} · ${p.categoria}</div>
         <h3><a href="producto.html?id=${p.id}">${p.name}</a></h3>
         <div class="product-foot">
           <span class="product-price">${formatPrice(p.precio)}${p.precioAntes ? `<span class="old">${formatPrice(p.precioAntes)}</span>` : ""}</span>
-          <button class="add-btn" data-add="${p.id}" ${agotado ? "disabled" : ""} aria-label="Añadir ${p.name} al carrito">+</button>
+          <button class="add-btn" data-add="${p.id}" ${agotado ? "disabled" : ""} aria-label="Añadir ${p.name} al carrito">Añadir</button>
         </div>
       </div>
     </div>`;
@@ -28,8 +28,8 @@ function bindAddButtons(container) {
       e.preventDefault();
       addToCart(btn.dataset.add, 1);
       const original = btn.textContent;
-      btn.textContent = "✓";
-      setTimeout(() => (btn.textContent = original), 900);
+      btn.textContent = "Añadido";
+      setTimeout(() => (btn.textContent = original), 1100);
     });
   });
 }

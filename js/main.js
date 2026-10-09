@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const syncButtons = (theme) => {
     toggleButtons.forEach(btn => {
-      btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+      btn.textContent = theme === 'dark' ? 'Claro' : 'Oscuro';
       btn.setAttribute('aria-label', theme === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro');
     });
   };
