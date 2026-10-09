@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finalizar pedido — Skorpion Cross</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme');
+      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme === 'dark' ? 'dark' : 'light');
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="topbar">
+    <div class="wrap">
+      <div class="topbar-links">
+        <a href="tel:+34910000000">📞 910 00 00 00</a>
+        <a href="mailto:info@skorpioncross.es">✉️ info@skorpioncross.es</a>
+        <span>📍 C/ Azuela, 56 · Polígono P29 · Collado Villalba</span>
+      </div>
+      <div class="topbar-links">
+        <span>Lun–Vie 9:30–14:00 / 16:30–20:00 · Sáb 10:00–14:00</span>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar wrap">
+    <a href="index.html" class="brand"><img src="assets/logo.svg" alt="Skorpion Cross"></a>
+    <ul class="nav-links">
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="carrito.html" class="cart-link" aria-label="Ver carrito">🛒<span class="cart-badge" data-cart-count hidden>0</span></a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">🌙</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-panel">
+    <button class="mobile-nav-close" id="navClose">✕</button>
+    <div class="mobile-theme-row">
+      <span>Modo claro / oscuro</span>
+      <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">🌙</button>
+    </div>
+    <a href="tienda.html">Tienda</a>
+    <a href="carrito.html">Carrito <span data-cart-count hidden>0</span></a>
+    <a href="index.html#contacto">Contacto</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="breadcrumbs"><a href="index.html">Inicio</a><span>/</span><a href="carrito.html">Carrito</a><span>/</span>Finalizar pedido</div>
+</div>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="page-head">
+      <h1>Finalizar pedido</h1>
+      <p>Simulación de checkout — no se realiza ningún cobro real ni se envía el pedido a ningún sistema.</p>
+    </div>
+    <div id="checkoutContent"></div>
+  </div>
+</section>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

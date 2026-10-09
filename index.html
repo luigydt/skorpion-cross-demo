@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skorpion Cross — Venta y Reparación de Motos en Collado Villalba</title>
+<meta name="description" content="Skorpion Cross: taller y distribuidor oficial BETA, KAWASAKI y PEUGEOT en Collado Villalba. Venta de motos nuevas y usadas, reparación y mantenimiento de motos, scooters, custom, quads, minimotos y eléctricas.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme');
+      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme === 'dark' ? 'dark' : 'light');
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="topbar">
+    <div class="wrap">
+      <div class="topbar-links">
+        <a href="tel:+34910000000">📞 910 00 00 00</a>
+        <a href="mailto:info@skorpioncross.es">✉️ info@skorpioncross.es</a>
+        <span>📍 C/ Azuela, 56 · Polígono P29 · Collado Villalba</span>
+      </div>
+      <div class="topbar-links">
+        <span>Lun–Vie 9:30–14:00 / 16:30–20:00 · Sáb 10:00–14:00</span>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar wrap">
+    <a href="#inicio" class="brand"><img src="assets/logo.svg" alt="Skorpion Cross"></a>
+
+    <ul class="nav-links">
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="#servicios">Taller</a></li>
+      <li><a href="#marcas">Marcas</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="#contacto" class="btn btn-outline">Pedir cita taller</a>
+      <a href="tienda.html" class="btn btn-primary">Ir a la tienda</a>
+      <a href="carrito.html" class="cart-link" aria-label="Ver carrito">🛒<span class="cart-badge" data-cart-count hidden>0</span></a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">🌙</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-panel">
+    <button class="mobile-nav-close" id="navClose">✕</button>
+    <div class="mobile-theme-row">
+      <span>Modo claro / oscuro</span>
+      <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">🌙</button>
+    </div>
+    <a href="tienda.html">Tienda</a>
+    <a href="carrito.html">Carrito <span data-cart-count hidden>0</span></a>
+    <a href="#servicios">Taller</a>
+    <a href="#marcas">Marcas</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+    <a href="tel:+34910000000" style="border:none; margin-top:10px;" class="btn btn-primary btn-block">Llamar ahora</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="hero-badges">
+        <span class="badge">Distribuidor oficial <strong>BETA</strong></span>
+        <span class="badge">Distribuidor oficial <strong>KAWASAKI</strong></span>
+        <span class="badge">Distribuidor oficial <strong>PEUGEOT</strong></span>
+      </div>
+      <h1>Tu moto, en las mejores <span>manos de Villalba</span></h1>
+      <p class="lead">Venta de motos nuevas y usadas, reparación y mantenimiento con tecnología moderna y trato cercano. Carretera, cross, scooters, custom, quads, minimotos y eléctricas.</p>
+      <div class="hero-cta">
+        <a href="tienda.html" class="btn btn-primary">Ver motos disponibles</a>
+        <a href="#contacto" class="btn btn-outline">Reservar cita en taller</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>+15</strong><span>Años de experiencia</span></div>
+        <div><strong>3</strong><span>Marcas oficiales</span></div>
+        <div><strong>6</strong><span>Tipos de vehículo</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <span class="flag">Taller propio</span>
+      <svg class="moto-mark" viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="106" r="28" fill="none" stroke="#ff5a1f" stroke-width="6"/>
+        <circle cx="50" cy="106" r="7" fill="#ff5a1f"/>
+        <circle cx="168" cy="106" r="28" fill="none" stroke="#ff5a1f" stroke-width="6"/>
+        <circle cx="168" cy="106" r="7" fill="#ff5a1f"/>
+        <!-- frame -->
+        <path d="M50 106 L96 66 L134 66 L150 92" fill="none" stroke="#f1ece1" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M96 66 L108 106 L168 106" fill="none" stroke="#f1ece1" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- seat -->
+        <path d="M108 106 L136 96" fill="none" stroke="#f1ece1" stroke-width="6" stroke-linecap="round"/>
+        <!-- handlebar + fork -->
+        <path d="M134 66 L146 46" fill="none" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/>
+        <path d="M134 66 L150 92" fill="none" stroke="#f1ece1" stroke-width="6" stroke-linecap="round"/>
+        <!-- exhaust -->
+        <path d="M108 106 L64 112" fill="none" stroke="#c81d25" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BRAND STRIP ===== -->
+<div class="brand-strip" id="marcas">
+  <div class="wrap">
+    <span class="label">Marcas oficiales que representamos</span>
+    <div class="brand-pills">
+      <span class="brand-pill beta">BETA</span>
+      <span class="brand-pill kawa">KAWASAKI</span>
+      <span class="brand-pill peug">PEUGEOT</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CATEGORIES ===== -->
+<section id="categorias">
+  <div class="wrap">
+    <div class="eyebrow">Catálogo</div>
+    <div class="section-head">
+      <h2>Todo tipo de vehículo, bajo un mismo techo</h2>
+      <p>Trabajamos con toda la gama: desde la moto de carretera del día a día hasta la de cross del fin de semana.</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card"><div class="icon">🏍️</div><h3>Carretera</h3><p>Naked, trail y scooter para el uso diario.</p></div>
+      <div class="cat-card"><div class="icon">🏁</div><h3>Cross &amp; Enduro</h3><p>Motos de competición y ocio todoterreno.</p></div>
+      <div class="cat-card"><div class="icon">🛵</div><h3>Scooters</h3><p>Movilidad urbana ágil y de bajo consumo.</p></div>
+      <div class="cat-card"><div class="icon">⭐</div><h3>Custom</h3><p>Estilo clásico con la fiabilidad de hoy.</p></div>
+      <div class="cat-card"><div class="icon">🚜</div><h3>Quads</h3><p>Para trabajo, campo y ocio todoterreno.</p></div>
+      <div class="cat-card"><div class="icon">🧒</div><h3>Minimotos</h3><p>La primera moto, pensada para los más peques.</p></div>
+      <div class="cat-card"><div class="icon">⚡</div><h3>Eléctricas</h3><p>Movilidad limpia, silenciosa y sin carné en algunos modelos.</p></div>
+      <div class="cat-card"><div class="icon">🔧</div><h3>Usadas revisadas</h3><p>Motos de ocasión con revisión y garantía de taller.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURED MOTOS (placeholder) ===== -->
+<section id="motos" style="padding-top:0;">
+  <div class="wrap">
+    <div class="eyebrow">Destacadas</div>
+    <div class="section-head">
+      <h2>Algunas de nuestras motos</h2>
+      <p>Selección de ejemplo — el catálogo completo y los precios reales se cargarán próximamente.</p>
+    </div>
+    <div class="product-grid" id="destacadas-grid"></div>
+    <div style="text-align:center; margin-top:36px;">
+      <a href="tienda.html" class="btn btn-outline">Ver todo el catálogo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="svc-section" id="servicios">
+  <div class="wrap">
+    <div class="eyebrow">Taller</div>
+    <div class="section-head">
+      <h2>Servicio rápido y personalizado</h2>
+      <p>Profesionales cualificados y tecnología moderna para mantener tu moto en perfectas condiciones.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-num">01</div>
+        <h3>Venta de motos nuevas</h3>
+        <p>Toda la gama oficial BETA, KAWASAKI y PEUGEOT, con asesoramiento y financiación a medida.</p>
+        <ul>
+          <li>Prueba de conducción</li>
+          <li>Financiación y entrega de llave en mano</li>
+          <li>Equipamiento y accesorios</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">02</div>
+        <h3>Compra-venta de usadas</h3>
+        <p>Motos de ocasión revisadas por nuestro taller, con garantía y trazabilidad.</p>
+        <ul>
+          <li>Revisión de 40 puntos</li>
+          <li>Tasación de tu moto actual</li>
+          <li>Garantía de taller</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">03</div>
+        <h3>Reparación y mantenimiento</h3>
+        <p>Mecánica general, electrónica, neumáticos y puesta a punto para todo tipo de vehículo.</p>
+        <ul>
+          <li>Diagnosis con equipo homologado</li>
+          <li>Recambios originales y equivalentes</li>
+          <li>Presupuesto sin compromiso</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section id="nosotros">
+  <div class="wrap">
+    <div class="eyebrow">Por qué elegirnos</div>
+    <div class="section-head">
+      <h2>Cerca de ti, con la confianza de siempre</h2>
+      <p>Un taller de barrio con el nivel técnico de un concesionario oficial.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="icon">👨‍🔧</div><h3>Profesionales cualificados</h3><p>Mecánicos con formación oficial de marca.</p></div>
+      <div class="why-card"><div class="icon">⚙️</div><h3>Tecnología moderna</h3><p>Diagnosis y herramientas al día.</p></div>
+      <div class="why-card"><div class="icon">⏱️</div><h3>Servicio rápido</h3><p>Citas ágiles y plazos claros de entrega.</p></div>
+      <div class="why-card"><div class="icon">🤝</div><h3>Trato personalizado</h3><p>Te acompañamos antes y después de la compra.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="svc-section">
+  <div class="wrap">
+    <div class="eyebrow">Opiniones</div>
+    <div class="section-head">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <p>Contenido de ejemplo — se sustituirá por reseñas reales.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Me revisaron la moto en un día y el presupuesto fue justo el que me dijeron por teléfono."</p>
+        <div class="testi-who"><div class="testi-avatar">J</div><div><strong>Javier R.</strong><span>Collado Villalba</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Compré mi Kawasaki con ellos, muy buen trato y me la entregaron a punto."</p>
+        <div class="testi-who"><div class="testi-avatar">M</div><div><strong>María G.</strong><span>Galapagar</span></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Llevo mi Beta de cross siempre aquí, saben lo que hacen y los precios son honestos."</p>
+        <div class="testi-who"><div class="testi-avatar">D</div><div><strong>David P.</strong><span>Moralzarzal</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner">
+  <div class="wrap">
+    <h2>¿Hablamos de tu moto?</h2>
+    <p>Ya sea para comprar, vender o llevarla a revisar, estamos en Collado Villalba para ayudarte.</p>
+    <div class="cta-buttons">
+      <a href="tel:+34910000000" class="btn btn-primary">📞 Llamar al taller</a>
+      <a href="https://wa.me/34600000000" class="btn btn-outline" target="_blank" rel="noopener">💬 Escribir por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact-section" id="contacto">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">Contacto</div>
+      <div class="section-head" style="margin-bottom:30px;">
+        <h2>Visítanos en el taller</h2>
+        <p>Estamos en el polígono industrial P29 de Collado Villalba.</p>
+      </div>
+      <div class="info-list">
+        <div class="info-item">
+          <div class="icon">📍</div>
+          <div><h4>Dirección</h4><p>C/ Azuela, 56 — Polígono P29<br>28400 Collado Villalba, Madrid</p></div>
+        </div>
+        <div class="info-item">
+          <div class="icon">🕐</div>
+          <div><h4>Horario</h4><p>Lunes a viernes: 9:30–14:00 y 16:30–20:00<br>Sábados: 10:00–14:00</p></div>
+        </div>
+        <div class="info-item">
+          <div class="icon">📞</div>
+          <div><h4>Teléfono</h4><a href="tel:+34910000000">910 00 00 00</a></div>
+        </div>
+        <div class="info-item">
+          <div class="icon">✉️</div>
+          <div><h4>Email</h4><a href="mailto:info@skorpioncross.es">info@skorpioncross.es</a></div>
+        </div>
+      </div>
+      <div class="map-embed">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-4.0180%2C40.6270%2C-3.9980%2C40.6420&layer=mapnik&marker=40.6345%2C-4.0080" loading="lazy" title="Mapa de ubicación Skorpion Cross"></iframe>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3>Escríbenos</h3>
+      <p class="note">Formulario de ejemplo — de momento no envía datos, es solo maqueta visual.</p>
+      <form onsubmit="return false;">
+        <div class="field-row">
+          <div class="field"><label>Nombre</label><input type="text" placeholder="Tu nombre"></div>
+          <div class="field"><label>Teléfono</label><input type="tel" placeholder="600 000 000"></div>
+        </div>
+        <div class="field"><label>Motivo</label>
+          <select>
+            <option>Quiero comprar una moto</option>
+            <option>Quiero vender mi moto</option>
+            <option>Cita para el taller</option>
+            <option>Otra consulta</option>
+          </select>
+        </div>
+        <div class="field"><label>Mensaje</label><textarea rows="4" placeholder="Cuéntanos qué necesitas..."></textarea></div>
+        <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+        <p class="form-note-small">Este formulario es un borrador visual — próximamente conectado.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="Skorpion Cross">
+        <p>Venta y reparación de motos en Collado Villalba. Distribuidor oficial BETA, KAWASAKI y PEUGEOT.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="https://wa.me/34600000000" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Catálogo</h4>
+        <ul>
+          <li><a href="tienda.html?condicion=Nueva">Motos nuevas</a></li>
+          <li><a href="tienda.html?condicion=Ocasi%C3%B3n">Motos de ocasión</a></li>
+          <li><a href="tienda.html?categoria=Quads">Quads y minimotos</a></li>
+          <li><a href="tienda.html?seccion=equipacion">Equipación</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Taller</h4>
+        <ul>
+          <li><a href="#servicios">Reparación</a></li>
+          <li><a href="#servicios">Mantenimiento</a></li>
+          <li><a href="#contacto">Pedir cita</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Ubicación</h4>
+        <p>C/ Azuela, 56<br>Polígono P29<br>28400 Collado Villalba</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Skorpion Cross. Todos los derechos reservados.</span>
+      <span class="draft-tag">BORRADOR — solo para mostrar</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/34600000000" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/product-card.js"></script>
+<script src="js/home.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

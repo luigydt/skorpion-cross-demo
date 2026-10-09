@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrito — Skorpion Cross</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme');
+      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme === 'dark' ? 'dark' : 'light');
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="topbar">
+    <div class="wrap">
+      <div class="topbar-links">
+        <a href="tel:+34910000000">📞 910 00 00 00</a>
+        <a href="mailto:info@skorpioncross.es">✉️ info@skorpioncross.es</a>
+        <span>📍 C/ Azuela, 56 · Polígono P29 · Collado Villalba</span>
+      </div>
+      <div class="topbar-links">
+        <span>Lun–Vie 9:30–14:00 / 16:30–20:00 · Sáb 10:00–14:00</span>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar wrap">
+    <a href="index.html" class="brand"><img src="assets/logo.svg" alt="Skorpion Cross"></a>
+
+    <ul class="nav-links">
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="index.html#servicios">Taller</a></li>
+      <li><a href="index.html#marcas">Marcas</a></li>
+      <li><a href="index.html#nosotros">Nosotros</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="tienda.html" class="btn btn-outline">Seguir comprando</a>
+      <a href="carrito.html" class="cart-link" aria-label="Ver carrito">🛒<span class="cart-badge" data-cart-count hidden>0</span></a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">🌙</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-panel">
+    <button class="mobile-nav-close" id="navClose">✕</button>
+    <div class="mobile-theme-row">
+      <span>Modo claro / oscuro</span>
+      <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">🌙</button>
+    </div>
+    <a href="tienda.html">Tienda</a>
+    <a href="carrito.html">Carrito <span data-cart-count hidden>0</span></a>
+    <a href="index.html#servicios">Taller</a>
+    <a href="index.html#marcas">Marcas</a>
+    <a href="index.html#nosotros">Nosotros</a>
+    <a href="index.html#contacto">Contacto</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="breadcrumbs"><a href="index.html">Inicio</a><span>/</span>Carrito</div>
+</div>
+
+<section class="cart-page" style="padding-top:0;">
+  <div class="wrap">
+    <div class="page-head">
+      <h1>Tu carrito</h1>
+      <p>Revisa tu pedido antes de continuar. Nada de esto se cobra todavía.</p>
+    </div>
+    <div id="cartContent"></div>
+  </div>
+</section>
+
+<a href="https://wa.me/34600000000" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/cart-page.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
